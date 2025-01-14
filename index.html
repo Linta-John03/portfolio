@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Linta John</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Linta John</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img id="profile-pic" src="./assets/linta pic.jpg" alt="Linta John profile picture">
+        </div>
+        <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Linta John</h1>
+                <div class="btn-container">
+                    <button
+                      class="btn btn-color-2"
+                      onclick="window.open('./assets/Linta_John_Resume .pdf')"
+                    >
+                      Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact Info
+                      </button>
+                      </div>
+                      <div id="socials-container">
+                        <img
+                          src="./assets/linkedin.png"
+                          alt="My LinkedIn profile"
+                          class="icon"
+                          onclick="location.href='https://www.linkedin.com/in/linta-john-34aa5127b/'"
+                        />
+                        <img
+                          src="./assets/github.png"
+                          alt="My Github profile"
+                          class="icon"
+                          onclick="location.href='https://github.com/Linta-John03'" 
+                          />
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <p>
+          Hi I am Linta John, a passionate and dedicated B.Tech Computer Science undergraduate. With a solid foundation in programming and software development, I specialize in C, Java, and Python. My academic journey, coupled with hands-on project experience, has helped me develop strong problem-solving skills, adaptability, and a commitment to delivering high-quality results. Known for my leadership and teamwork abilities, I thrive in collaborative environments and excel at meeting challenges head-on.</section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-icons">
+            <div class="icon">
+                <img src="./assets/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="icon">
+                <img src="./assets/css-3 (1).png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="icon">
+                <img src="./assets/flutter.jpeg" alt="React">
+                <p>Flutter</p>
+            </div>
+            <div class="icon">
+              <img src="./assets/java.png" alt="GraphQL">
+              <p>Java</p>
+          </div>
+            <div class="icon">
+              <img src="./assets/c.jpeg" alt="CSS">
+              <p>C</p>
+          </div>
+            <div class="icon">
+                <img src="./assets/python.png" alt="Node">
+                <p>Python</p>
+            </div>
+            <div class="icon">
+              <img src="./assets/mysql.jpeg" alt="Node">
+              <p>MySQL</p>
+          </div>
+        </div>
+        <section id="projects">
+            <p class="section__text__p1">My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="./assets/scrn.png" alt="Project Image" class="project-image">
+                    <h3>HomeConnect</h3>
+                    <p>HomeConnect is a platform for booking student accommodations like hostels and PGs...</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Linta-John03/homeconnect" class="btn">See Work</a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-container">
+              <div class="contact-info">
+                <div class="email-item">
+                  <a href="mailto:lintajohn1109@gmail.com">
+                    <img src="./assets/email.png" alt="Email Icon"> lintajohn1109@gmail.com
+                </a>
+                
+                </div>
+                <div class="linkedin-item">
+                  <a href="https://www.linkedin.com/in/linta-john-34aa5127b/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Icon"> linkedin.com/in/linta-john-34aa5127b/
+                  </a>
+                </div>
+                <div class="github-item">
+                  <a href="https://github.com/Linta-John03" target="_blank">
+                    <img src="./assets/github.png" alt="GitHub Icon"> github.com/Linta-John03
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <footer>
+            <p>Copyright &#169; 2024  Linta John. All Rights Reserved.</p>
+          </footer>              
+    <script src="script.js"></script>
+</body>
+</html>
